@@ -2,8 +2,8 @@
 
 This README explains **two core concepts** you’ll use a lot in computing:
 
-- **Pseudocode** → how the program _thinks_ (logic in plain language).
-- **Interaction** → how the user and the system _talk_ to each other (steps of using the system).
+- **Pseudocode** → how the **programer thinks** (logic in plain language).
+- **Interaction** → how the user and the system **talk to each other** (steps of using the system).
 
 ---
 
@@ -13,7 +13,7 @@ This README explains **two core concepts** you’ll use a lot in computing:
 
 Pseudocode is a way to write the **steps of a solution** in simple, structured language without worrying about real code syntax.
 
-- Not tied to any programming language (NOT a coding language).
+- Not tied to any programming language (NOT a Coding Language).
 - Focuses on **logic** instead of details like `;`, `{}`, etc.
 - Used to plan the algorithm **before** writing actual code.
 
