@@ -62,3 +62,11 @@ button:hover {
     margin-top: 1rem;
     font-weight: bold;
 }
+
+footer {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
