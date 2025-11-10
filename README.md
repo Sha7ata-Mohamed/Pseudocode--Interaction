@@ -60,33 +60,51 @@ In computing, interaction is the **step-by-step** **communication** between a us
 
 Here’s how a user interacts with a login page, step by step:
 
-1. The system displays a login form with:
-   - Email field
-   - Password field
-   - "Sign In" button
+```text
+1. System:
+   - Displays a login page with:
+     - Email input field
+     - Password input field
+     - "Sign In" button
+     - Optional: "Forgot Password?" link
 
-2. The user types their email and password.
+2. User:
+   - Clicks on the Email field.
+   - Types their email address.
+   - Clicks on the Password field.
+   - Types their password.
+   - Clicks the "Sign In" button.
 
-3. The user clicks the "Sign In" button.
+3. System (Client-Side Check):
+   - Checks if email field is not empty.
+   - Checks if email looks like a valid format (contains "@" etc.).
+   - Checks if password is not empty.
 
-4. The system checks:
-   - Is the email format valid?
-   - Is the password field not empty?
+4. IF there is a problem (for example: password is empty):
+   - System shows an error message under the field:
+     "Password cannot be empty."
+   - System does NOT send data to the server.
+   - User stays on the same page.
 
-5. IF there is a problem:
-   - The system shows an error message
-     (e.g., "Password cannot be empty.")
-   ELSE
-   - The system sends the data to the server.
+5. ELSE (inputs look valid):
+   - System sends email and password to the server.
 
-6. The server checks if the credentials are correct.
+6. Server:
+   - Looks up the email in the database.
+   - Compares the submitted password with the stored password.
 
-7. IF the credentials are correct:
-   - The system redirects the user to the dashboard.
-   - The system shows: "Welcome back!"
-   ELSE
-   - The system keeps the user on the login page.
-   - The system shows: "Invalid email or password."
+7. IF credentials are correct:
+   - Server returns success.
+   - System redirects user to the dashboard/home page.
+   - System displays a welcome message like:
+     "Welcome back, Abdulrahman!"
+
+8. ELSE (wrong email or password):
+   - Server returns failure.
+   - System stays on the login page.
+   - System displays an error message:
+     "Invalid email or password. Please try again."
+```
 
 ---
 
