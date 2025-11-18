@@ -1,11 +1,19 @@
-/* CSS: inheritance */
+/* CSS:
+    1 -inheritance
+*/
+
+body{
+    color: red;
+}
+
 .content {
-    color: #0d4988;
-    /* children inherit this color */
+    color: #0413eb;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 15rem;
-    font-size: 2.1rem;
+    padding-top: 11.5rem;
+    font-size: 30px;
+    line-height: 2CM;
+    /*letter-spacing: 0.5em;*/
 }
 
 .content h1 {

@@ -1,34 +1,79 @@
 /* CSS: pseudo-classes */
+
+/*Link Pseudo-Classes*/
+
+/*Lord Vader Former Handle Anakin */
+/*  Link, Visited, Focus, Hover, Active */
+
 .btn-link:link {
   color: green;
-}
-
-
-.btn-link:hover {
-  text-decoration: underline;
 }
 
 .btn-link:visited {
   color: black;
 }
 
+.btn-link:hover {
+  text-decoration: underline;
+}
 
 .btn-link:active {
   color: red;
 }
 
+/* Form-Related Pseudo-Classes */
+
+
+/*
+:focus — when an input is active and ready for typing
+
+:required — input with the “required” attribute
+
+:valid — input whose value passes validation
+
+:invalid — input with incorrect value (e.g., wrong email format)
+*/
+
+
+
+
+/* When an input is active and ready for typing */
+input:focus {
+  border: 2px solid blue;
+  background-color: #e3f2fd;
+}
+
+/* Required fields (those with required attribute) */
+input:required {
+  border-right: 4px solid orange;
+}
+
+/* Input value is valid (correct format, passes all rules) */
+input:valid {
+  border: 2px solid green;
+}
+
+/* Input value is invalid (incorrect format, empty, too short, etc.) */
+input:invalid {
+  border: 2px solid red;
+}
+
+.example-form {
+  width: 300px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+/* Structural Pseudo-Classes */
 
 li:first-child {
   color: red;
 }
 
-
-.btn-link {
-  display: flex;
-  justify-content: center;
-  padding-top: 15rem;
-  font-size: 2.1rem;
-}
 
 footer {
   position: fixed;
@@ -36,4 +81,13 @@ footer {
   left: 0;
   width: 100%;
   text-align: center;
+}
+
+
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+  font-size: 2.1rem;
 }
